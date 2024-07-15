@@ -156,6 +156,9 @@ header nav ul li a.active {
     box-sizing: border-box; /* Inclui padding e border no width e height */
 }
 
+.spanjson{
+    font-size: 30px;
+}
 /* Estilo da divex01 */
 .divex01 {
     background-color: var(--cor-branco);
@@ -228,6 +231,9 @@ header nav ul li a.active {
 
     .span {
         width: 300px;
+    }
+    .spanjson{
+        font-size: 15px;
     }
 }
 
