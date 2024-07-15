@@ -283,7 +283,7 @@ header nav ul li a.active {
 }
 
 /* Media Query para telas menores */
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 1200px) {
     .about {
         padding: 40px 0; /* Mantém o padding adequado */
     }
@@ -299,6 +299,7 @@ header nav ul li a.active {
 
     .about-description p {
         font-size: 16px; /* Ajusta o tamanho da fonte */
+        text-align: center;
     }
 
     .imgapi {
@@ -397,7 +398,7 @@ header nav ul li a.active {
     cursor: default;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     .haircusts {
       flex-direction: column;
     }
