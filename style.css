@@ -277,3 +277,24 @@ header nav ul li a.active {
       max-width: 64px;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0F1923;
+    color: #fff;
+  }
