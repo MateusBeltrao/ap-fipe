@@ -351,7 +351,60 @@ header nav ul li a.active {
 
 
 
-
+  .haircusts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+  }
+  
+  .haircust {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+  }
+  .haircust img {
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.2s;
+  }
+  
+  .haircust img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .haircust-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: #fff;
+    z-index: 99;
+  }
+  
+  .haircust-info button {
+    color: #fff;
+    background-color: #d94140;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .haircusts {
+      flex-direction: column;
+    }
+    .haircust {
+      max-width: 740px;
+    }
+  }
 
 
 
