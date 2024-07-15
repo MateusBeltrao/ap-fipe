@@ -364,3 +364,13 @@ header nav ul li a.active {
     color: #fff;
     width: 100%;
   }
+
+
+
+
+
+  @media (max-width: 786px){
+    body, html {
+    overflow-x: hidden!important;
+    }
+    }
