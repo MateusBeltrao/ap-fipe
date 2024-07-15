@@ -16,6 +16,7 @@
 }
 body {
     background: var(--cor-primaria);
+    overflow-x: hidden;
 }
 
 header {
@@ -231,7 +232,7 @@ header nav ul li a.active {
     }
 
     .imgapi{
-        width: 400px;
+        width: 350px;
         margin-top: 50px;
     }
   }
