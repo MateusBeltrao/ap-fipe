@@ -163,6 +163,23 @@ header nav ul li a.active {
     .exemplo{
         flex-direction: column;
     }
+
+    .divex01{
+        width: 400px;
+    }
+
+    .mainLogo{
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .divex01 h1{
+        font-size: 20px;
+    }
+
+    .span{
+        width: 300px;
+    }
 }
 
 
@@ -211,6 +228,11 @@ header nav ul li a.active {
     }
     .about-description p {
         text-align: center;
+    }
+
+    .imgapi{
+        width: 400px;
+        margin-top: 50px;
     }
   }
 
