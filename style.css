@@ -111,6 +111,8 @@ header nav ul li a.active {
 @media screen and (max-width: 1200px) {
     header {
         padding: 0 50px;
+        width: 80%;
+        background-color: #000;
     }
 }
 
