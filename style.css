@@ -23,6 +23,7 @@ body {
     padding: 0; /* Remove padding padrão */
     font-family: Arial, sans-serif; /* Fonte padrão */
     background-color: red;
+    flex-direction: column;
 }
 
 
