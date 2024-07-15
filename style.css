@@ -112,13 +112,17 @@ header nav ul li a.active {
     }
 }
 
-.exemplo{
+/* Estilos para a seção exemplo */
+.exemplo {
     display: flex;
     align-items: center;
     height: 100vh;
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e border no width e height */
 }
 
-.divex01{
+/* Estilo da divex01 */
+.divex01 {
     background-color: var(--cor-branco);
     height: 600px;
     width: 700px;
@@ -130,114 +134,129 @@ header nav ul li a.active {
     align-items: center;
 }
 
-.divex01 h1{
+/* Estilo dos h1 dentro da divex01 */
+.divex01 h1 {
     color: #000;
     margin-top: 80px;
 }
 
-
-    
-
-.span{
+/* Estilo da classe .span */
+.span {
     background-color: var(--cor-secundaria);
     margin: 20px;
     height: 30px;
     width: 400px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.divex02{
+/* Estilo da divex02 */
+.divex02 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px;
 }
 
-.divex02 h1{
+/* Estilo dos h1 dentro da divex02 */
+.divex02 h1 {
     color: var(--cor-branco);
     margin-bottom: 80px;
 }
 
-
-
-@media only screen and (max-width: 1200px){
-    .exemplo{
+/* Media Query para telas menores */
+@media only screen and (max-width: 1200px) {
+    .exemplo {
         flex-direction: column;
+        height: auto; /* Ajusta a altura para se ajustar ao conteúdo */
+        padding: 40px 0; /* Ajusta o padding para uma melhor visualização */
     }
 
-    .divex01{
+    .divex01 {
         width: 400px;
     }
 
-    .mainLogo{
+    .mainLogo {
         width: 250px;
         margin-top: 20px;
     }
 
-    .divex01 h1{
+    .divex01 h1 {
         font-size: 20px;
     }
 
-    .span{
+    .span {
         width: 300px;
     }
 }
 
-
-
+/* Estilos para a seção about */
 .about {
     overflow: hidden;
     color: #fff;
-    width: 80%;
-  }
-  
-  .about-content {
+    width: 80%; /* Garante que a seção ocupe a largura total */
+    padding: 40px 0; /* Adiciona espaçamento superior e inferior */
+    box-sizing: border-box; /* Inclui padding e border no width e height */
+}
+
+/* Estilo da about-content */
+.about-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
     padding: 34px 14px 64px 14px;
-  }
-  .about-content img {
+}
+
+/* Estilo da imagem dentro da about-content */
+.about-content img {
     max-width: 570px;
-  }
-  
-  .about-content div {
+    width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+}
+
+/* Estilo do conteúdo dentro da about-content */
+.about-content div {
     flex: 1;
-  }
-  
-  .about-description h2 {
+}
+
+/* Estilo da descrição dentro da about-content */
+.about-description h2 {
     font-size: 38px;
     margin-bottom: 24px;
-  }
-  .about-description p {
+    text-align: center; /* Centraliza o texto */
+}
+
+.about-description p {
     margin-bottom: 14px;
     line-height: 150%;
-  }
-  
-  @media screen and (max-width: 968px) {
-    
-.about {
-    width: 80%;
-    margin-top: 240px;
-  }
+    /* Centraliza o texto */
+}
+
+/* Media Query para telas menores */
+@media screen and (max-width: 968px) {
+    .about {
+        padding: 40px 0; /* Mantém o padding adequado */
+    }
+
     .about-content {
-      flex-direction: column;
+        flex-direction: column;
     }
-    .about-description h2{
-        text-align: center;
+
+    .about-description h2 {
+        font-size: 30px; /* Reduz o tamanho da fonte */
+         text-align: center;
     }
+
     .about-description p {
-        text-align: center;
+        font-size: 16px; /* Ajusta o tamanho da fonte */
     }
 
-    .imgapi{
-        width: 350px;
-        margin-top: 50px;
+    .imgapi {
+        width: 300px;
+        margin-top: 20px; /* Ajusta o espaçamento */
     }
-  }
-
+}
 
   
   .btn-whatsapp {
