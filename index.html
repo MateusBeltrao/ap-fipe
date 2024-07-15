@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <link rel="stylesheet" href="style.css">
+    <title>API</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <ul>
+                <li>
+                    <a href="" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="">Portfolio</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    <main>
+        <div class="exemplo">
+            <div class="divex01">
+                <img src="img/logo.png" alt="logo" class="mainLogo">
+                <h1>VEJA UM EXEMPLO DE CONSULTA</h1>
+                <div>
+                    <div class="span">
+                        <span>Carros</span>
+                    </div>
+                    <div class="span">
+                        <span>VW - VolksWagen</span>
+                    </div>
+                    <div class="span">
+                        <span>Gol Comfortine</span>
+                    </div>
+                    <div class="span">
+                        <span>2017</span><br>
+                    </div>
+                </div>
+                <h1 style="color: red;">R$ 47.456,00</h1>
+            </div>
+            <div class="divex02">
+                <h1>Resposta do servidor</h1>
+                <span style="font-size: 60px; color: #fff;">{<span style="color: aqua;">JSON</span>}</span>
+                <br>
+                <span style="font-size: 30px;">
+                    {<br>
+
+                        &nbsp;&nbsp;&nbsp;"fipe_codigo": 
+                        &nbsp;&nbsp;&nbsp;<span style="color: #fff">"005456-9"</span>
+                        ,<br>
+                        &nbsp;&nbsp;&nbsp;"name": 
+                        &nbsp;&nbsp;&nbsp;<span style="color: #fff">"Gol Comfortline 1.0 T. Flex 12V 5p"</span>
+                        ,<br>
+                        &nbsp;&nbsp;&nbsp;"marca": 
+                        &nbsp;&nbsp;&nbsp;<span style="color: #fff">"VW - VolksWagen"></span>
+                        ,<br>
+                        &nbsp;&nbsp;&nbsp;"ano": 
+                        &nbsp;&nbsp;&nbsp;<span style="color: #fff">"2017"</span>
+                        ,<br>
+                        &nbsp;&nbsp;&nbsp;"combustivel": 
+                        &nbsp;&nbsp;&nbsp;<span style="color: #fff">"Gasolina"</span>
+                        ,<br>
+                        &nbsp;&nbsp;&nbsp;"preco": 
+                        &nbsp;&nbsp;&nbsp;<span style="color: #fff">"R$ 47.456,00"</span>
+                        <br>}
+                </span>
+            </div>
+        </div>
+
+
+        <section class="about">
+            <div class="container about-content">
+                <div data-aos="zoom-in" data-aos-delay="100">
+                    <img src="img/api.webp" alt="Imagem sobre a barbearia">
+                </div>
+    
+                <div class="about-description" data-aos="zoom-out-left" data-aos-delay="200">
+                    <h2>Sobre</h2>
+                    <p>Na nossa barbearia, estilo é mais do que uma questão de aparência. É uma afirmação de quem você é. Cada corte, cada detalhe reflete sua atitude e personalidade. Venha descobrir como podemos realçar o seu verdadeiro eu com elegância e confiança.</p>
+                    <p>Horário de funcioamento: <strong>09:00</strong>às <strong>19:00</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <a data-aos="zoom-in-up" data-aos-delay="400" href="https://api.whatsapp.com/send?phone=5591981102017&text=Quero%20fazer%20um%20agendamento!" class="btn-whatsapp" target="_blank">
+        <img src="img/whatssapp.svg" alt="Botao whatssapp">
+        <span class="tooltip-text"> Agende seu horário</span>
+    </a>
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Inicializa o AOS
+    </script>
+</body>
+</html>
