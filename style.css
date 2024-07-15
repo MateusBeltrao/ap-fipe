@@ -346,7 +346,8 @@ header nav ul li a.active {
 
   footer{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    height: 80px;
     align-items: center;
     background-color: #111827;
     color: #fff;
