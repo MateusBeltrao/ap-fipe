@@ -40,8 +40,9 @@ h1 {
 }
 
 /* Estilos básicos para o header */
+/* Estilo do header */
 header {
-    background-color: #fff; /* Adicione uma cor de fundo para o cabeçalho */
+    background-color: #fff; /* Cor de fundo do cabeçalho */
     color: var(--cor-texto); /* Cor do texto */
     display: flex;
     align-items: center;
@@ -53,6 +54,7 @@ header {
     width: 100%;
     z-index: 1000; /* Garante que o cabeçalho fique sobre outros conteúdos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o cabeçalho */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
 
 /* Logo do cabeçalho */
@@ -60,17 +62,22 @@ header .logo img {
     width: 200px; /* Ajuste a largura da logo */
 }
 
-/* Estilos do menu de navegação */
+/* Menu de navegação */
 header nav ul {
     display: flex;
     list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding extra */
+    margin: 0; /* Remove a margem extra */
+}
+
+header nav ul li {
+    margin: 0 10px; /* Espaço entre itens */
 }
 
 header nav ul li a {
     display: inline-block;
     color: var(--cor-primaria);
     padding: 5px 0;
-    margin: 0 10px;
     border: 3px solid transparent;
     text-transform: uppercase;
     transition: 0.2s;
@@ -82,7 +89,7 @@ header nav ul li a.active {
     border-bottom-color: var(--cor-primaria);
 }
 
-/* Estilos do menu hamburguer */
+/* Estilo do menu hamburguer */
 .hamburger {
     cursor: pointer;
     display: none;
@@ -112,18 +119,20 @@ header nav ul li a.active {
     header nav {
         position: absolute;
         width: 100%;
-        left: -100%;
-        top: 60px; /* Ajuste a posição para a altura do cabeçalho */
+        left: -100%; /* Oculta o menu fora da tela */
+        top: 70px; /* Ajuste a posição para a altura do cabeçalho */
         background: #fff;
         padding: 30px;
+        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
         transition: 0.3s;
     }
     header #nav_check:checked ~ nav {
-        left: 0;
+        left: 0; /* Mostra o menu quando o checkbox está marcado */
     }
     header nav ul {
         display: block;
         padding: 0; /* Remove o padding extra */
+        margin: 0; /* Remove a margem extra */
     }
     header nav ul li a {
         margin: 5px 0;
