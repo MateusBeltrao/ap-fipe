@@ -22,7 +22,7 @@ body {
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove padding padrão */
     font-family: Arial, sans-serif; /* Fonte padrão */
-    background-color: rgb(112, 92, 92);
+    background-color: var(--cor-branco);
     flex-direction: column;
 }
 
