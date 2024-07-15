@@ -22,7 +22,7 @@ body {
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove padding padrão */
     font-family: Arial, sans-serif; /* Fonte padrão */
-    background-color: red;
+    background-color: rgb(112, 92, 92);
     flex-direction: column;
 }
 
@@ -108,13 +108,13 @@ header nav ul li a.active {
 }
 
 /* Media Query para telas menores */
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     header {
         padding: 0 50px;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media  screen and (max-width: 700px) {
     .hamburger {
         display: block;
     }
