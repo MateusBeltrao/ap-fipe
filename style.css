@@ -1,9 +1,9 @@
 :root {
     --cor-primaria: #3F65D4; 
     --cor-secundaria: #4E73DF; 
-    --cor-accento: #403B45; 
+    --cor-accento: #858999; 
     --cor-branco: #FFFFFF; 
-    --cor-texto02: #FFCFB1; 
+    --cor-texto02: #ECEDF1; 
 }
 
 * {
@@ -15,13 +15,13 @@
     box-sizing: border-box;
 }
 body {
-    background: var(--cor-primaria);
+    background: var(--cor-branco);
     overflow-x: hidden;
     width: 100%;
 }
 
 header {
-    background: var(--cor-branco);
+    background: var(--cor-texto02);
     width: 100%;
     height: 70px;
     display: flex;
@@ -44,15 +44,31 @@ h1 {
     display: flex;
 }
 
-
-header .logo  img{
-    font-size: 30px;
-    text-transform: uppercase;
-    width: 200px;
+/* Estilos básicos para o header */
+header {
+    background-color: #fff; /* Adicione uma cor de fundo para o cabeçalho */
+    color: var(--cor-texto); /* Cor do texto */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px; /* Espaçamento interno */
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros conteúdos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o cabeçalho */
 }
 
+/* Logo do cabeçalho */
+header .logo img {
+    width: 200px; /* Ajuste a largura da logo */
+}
+
+/* Estilos do menu de navegação */
 header nav ul {
     display: flex;
+    list-style: none; /* Remove os marcadores da lista */
 }
 
 header nav ul li a {
@@ -64,39 +80,45 @@ header nav ul li a {
     text-transform: uppercase;
     transition: 0.2s;
 }
+
+/* Estilos do link ativo e hover */
 header nav ul li a:hover,
 header nav ul li a.active {
     border-bottom-color: var(--cor-primaria);
 }
 
+/* Estilos do menu hamburguer */
 .hamburger {
     cursor: pointer;
     display: none;
 }
+
 .hamburger div {
     width: 30px;
     height: 3px;
     margin: 5px 0;
     background: #000;
 }
+
+/* Media Query para telas menores */
 @media only screen and (max-width: 1200px) {
     header {
         padding: 0 50px;
     }
 }
+
 @media only screen and (max-width: 700px) {
     .hamburger {
         display: block;
     }
-    header{
+    header {
         padding: 0 30px;
     }
     header nav {
         position: absolute;
         width: 100%;
         left: -100%;
-        top: 70px;
-        width: 100%;
+        top: 60px; /* Ajuste a posição para a altura do cabeçalho */
         background: #fff;
         padding: 30px;
         transition: 0.3s;
@@ -106,11 +128,13 @@ header nav ul li a.active {
     }
     header nav ul {
         display: block;
+        padding: 0; /* Remove o padding extra */
     }
     header nav ul li a {
         margin: 5px 0;
     }
 }
+
 
 /* Estilos para a seção exemplo */
 .exemplo {
@@ -136,19 +160,21 @@ header nav ul li a.active {
 
 /* Estilo dos h1 dentro da divex01 */
 .divex01 h1 {
-    color: #000;
+    color: var(--cor-primaria);
     margin-top: 80px;
 }
 
 /* Estilo da classe .span */
-.span {
-    background-color: var(--cor-secundaria);
-    margin: 20px;
-    height: 30px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.divex01 span{
+    text-align: center;
+    margin-top: 20px;
+    width: 80%;
+    color: var(--cor-accento);
+    font-size: 20px;
+}
+
+.mainLogo{
+    margin-bottom: 30px;
 }
 
 /* Estilo da divex02 */
@@ -157,6 +183,9 @@ header nav ul li a.active {
     flex-direction: column;
     align-items: center;
     margin: 40px;
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+    border-radius: 50px;
 }
 
 /* Estilo dos h1 dentro da divex02 */
@@ -222,14 +251,17 @@ header nav ul li a.active {
 
 /* Estilo da descrição dentro da about-content */
 .about-description h2 {
-    font-size: 38px;
+    font-size: 45px;
     margin-bottom: 24px;
     text-align: center; /* Centraliza o texto */
+    color: var(--cor-secundaria);
 }
 
 .about-description p {
+    font-size: 20PX;
     margin-bottom: 14px;
     line-height: 150%;
+    color: var(--cor-accento);
     /* Centraliza o texto */
 }
 
@@ -316,6 +348,6 @@ header nav ul li a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0F1923;
+    background-color: #111827;
     color: #fff;
   }
