@@ -93,10 +93,10 @@ header nav ul li a.active {
     border-bottom-color: dodgerblue;
 }
 
-/* Estilo do menu hamburguer */
+
 .hamburger {
     cursor: pointer;
-    display: none; /* Ocultar por padrão */
+    display: none;
 }
 
 .hamburger div {
@@ -106,7 +106,7 @@ header nav ul li a.active {
     background: #000;
 }
 
-/* Media Query para telas menores */
+
 @media only screen and (max-width: 900px) {
     header {
         padding: 0 30px;
@@ -115,29 +115,29 @@ header nav ul li a.active {
 
 @media only screen and (max-width: 700px) {
     .hamburger {
-        display: block; /* Exibir o ícone do menu hamburguer */
+        display: block; 
     }
     header nav {
         position: absolute;
-        width: 300px; /* Largura do menu lateral */
-        right: 0; /* Alinha o menu à direita */
-        top: 70px; /* Ajuste a posição para a altura do cabeçalho */
+        width: 300px; 
+        right: 0;
+        top: 70px; 
         background: #fff;
         padding: 30px;
-        box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+        box-sizing: border-box;
         transition: 0.3s;
-        transform: translateX(100%); /* Oculta o menu fora da tela à direita */
+        transform: translateX(100%); 
     }
     header #nav_check:checked ~ nav {
-        transform: translateX(0); /* Mostra o menu quando o checkbox está marcado */
+        transform: translateX(0); 
     }
     header nav ul {
-        display: block; /* Exibe a lista de itens como bloco */
-        padding: 0; /* Remove o padding extra */
-        margin: 0; /* Remove a margem extra */
+        display: block; 
+        padding: 0;
+        margin: 0;
     }
     header nav ul li a {
-        margin: 5px 0; /* Adiciona espaço entre os links */
+        margin: 5px 0; 
     }
 }
 
@@ -196,41 +196,41 @@ header nav ul li a.active {
 
 .div-hi {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
-    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .about-description02 {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
     padding: 20px;
     border-radius: 50px;
-    margin: 20px; /* Espaço entre os itens */
-    max-width: 300px; /* Limita a largura dos itens */
+    margin: 20px;
+    max-width: 300px; 
 }
 
 .abouticon {
     display: flex;
-    align-items: center; /* Alinha a imagem e o título no centro */
-    margin-bottom: 10px; /* Espaço entre a imagem e o título */
+    align-items: center;
+    margin-bottom: 10px; 
 }
 
 .abouticon img {
-    margin-bottom: 0; /* Remove qualquer margem abaixo da imagem */
+    margin-bottom: 0;
 }
 
 .abouticon h2 {
-    margin: 0; /* Remove a margem padrão do título */
+    margin: 0; 
 }
 
 .about-text {
-    text-align: center; /* Centraliza o texto dentro do bloco */
+    text-align: center; 
 }
 
-/* Estilos adicionais para o título e o texto */
+
 .about-description02 h2 {
-    font-size: 1.5em; /* Ajuste o tamanho da fonte do título */
+    font-size: 1.5em;
 }
 
 .about-description02 span {
