@@ -593,7 +593,7 @@ header nav ul li a.active {
     align-items: center;
     height: 80px;
     align-items: center;
-    background-color: #111827;
+    background-color: #d61616;
     color: #fff;
     width: 100%;
   }
@@ -611,6 +611,7 @@ header nav ul li a.active {
   @media only screen and (max-width: 1200px){
 
     footer{
+
         flex-direction: column;
         height: 100px;
     }
