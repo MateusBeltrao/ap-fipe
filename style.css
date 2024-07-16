@@ -447,6 +447,7 @@ header nav ul li a.active {
 
   .haircusts {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
@@ -461,6 +462,11 @@ header nav ul li a.active {
     border-radius: 8px;
     box-shadow: 0 -1px 17px -4px rgba(0, 0, 0, 0.45);
     overflow: hidden;
+  }
+
+
+  .haircusts h1{
+    font-size: 50px;
   }
   .haircust img {
     width: 100%;
@@ -491,12 +497,69 @@ header nav ul li a.active {
     cursor: default;
   }
   
+  
+.cards{
+    display: flex;
+}
+  .card-preco{
+    border: var(--cor-accento) 1px solid;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+  }
+
+  .card-preco-icpon{
+    width: 60px;
+    margin-bottom: 30px;
+  }
+
+  .card-preco h2{
+    font-size: 30px;
+    color: var(--cor-accento);
+    margin-bottom: 20px;
+  }
+
+  .btn-card{
+    padding: 10px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto02);
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  .btn-card:hover{
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto02);
+  }
+  
+  .feature-list {
+    text-align: center; /* Centraliza os itens no container */
+}
+
+.feature-item {
+    color: #858999; /* Cor do texto */
+    border-bottom: 0.5px solid #858999; /* Linha abaixo do texto */
+    padding-bottom: 5px; /* Espaço entre o texto e a linha */
+    display: inline-block; /* Faz com que a linha seja a mesma largura do texto */
+    margin: 10px;
+}
+
+
+
   @media screen and (max-width: 1200px) {
     .haircusts {
       flex-direction: column;
     }
     .haircust {
       max-width: 740px;
+    }
+    .cards{
+        flex-direction: column;
     }
   }
 
