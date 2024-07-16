@@ -367,6 +367,11 @@ header nav ul li a.active {
     padding: 34px 14px 64px 14px;
 }
 
+.about02  h1{
+    text-align: center;
+    font-size: 40px;
+}
+
 .about-content2 div{
     flex: 1;
 }
