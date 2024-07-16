@@ -315,14 +315,20 @@ header nav ul li a.active {
 
 
 @media screen and (max-width: 1200px) {
-    .about {
+    .about, .about02 {
         padding: 40px 0; 
     }
 
-    .about-content {
+    .about-content, .about-content2 {
         flex-direction: column;
     }
 
+    .div-hi{
+        flex-direction: column;
+    }
+    .abouticon{
+        font-size: 20px;
+    }
     .about-description h2 {
         font-size: 30px;
          text-align: center;
