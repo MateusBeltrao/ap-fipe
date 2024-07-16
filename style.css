@@ -370,6 +370,7 @@ header nav ul li a.active {
 .about02  h1{
     text-align: center;
     font-size: 40px;
+    margin-top: 40px;
 }
 
 .about-content2 div{
@@ -574,6 +575,7 @@ header nav ul li a.active {
   footer{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 80px;
     align-items: center;
     background-color: #111827;
@@ -581,8 +583,15 @@ header nav ul li a.active {
     width: 100%;
   }
 
+  footer span{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
 
-
+  footer span img{
+    margin: 10px;
+  }
 
 
   @media (max-width: 786px){
