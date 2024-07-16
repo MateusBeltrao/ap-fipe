@@ -440,6 +440,7 @@ header nav ul li a.active {
   @media screen and (max-width: 768px) {
     .btn-whatsapp img {
       max-width: 64px;
+      margin-bottom: 30px;
     }
   }
 
@@ -537,6 +538,20 @@ header nav ul li a.active {
     background-color: var(--cor-primaria);
     color: var(--cor-texto02);
   }
+
+  .btn-card02{
+    padding: 10px 20px;
+    background-color: #1cc88a;
+    color: var(--cor-texto02);
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  .btn-card02:hover{
+    background-color: #18a772;
+    color: var(--cor-texto02);
+  }
   
   .feature-list {
     text-align: center; /* Centraliza os itens no container */
@@ -591,6 +606,29 @@ header nav ul li a.active {
 
   footer span img{
     margin: 10px;
+  }
+
+  @media only screen and (max-width: 1200px){
+
+    footer{
+        flex-direction: column;
+        height: 100px;
+    }
+
+    footer h1{
+        font-size: 18px;
+    }
+
+    footer span{
+        display: flex;
+        align-items: center;
+        margin: 0;
+      }
+    
+      footer span img{
+        width: 20px;
+        margin: 5px;
+      }
   }
 
 
