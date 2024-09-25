@@ -210,6 +210,8 @@ header nav ul li a.active {
     max-width: 300px; 
 }
 
+
+
 .abouticon {
     display: flex;
     align-items: center;
@@ -314,6 +316,59 @@ header nav ul li a.active {
 }
 
 
+
+.about02{
+    overflow: hidden;
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 40px 0; 
+    box-sizing: border-box;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about02 .container{
+    width: 90%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+}
+
+.about02  h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.about-content2 div{
+    flex: 1;
+}
+
+.about02 .imgapi{
+    max-width: 570px;
+    width: 100%;
+  
+}
+
+about-description02 div-vi
+
+
+.abouticon{
+  display: flex;
+  align-items: center;
+
+}
+.about-description02 img{
+    margin: 10px;
+}
+
+
+
 @media screen and (max-width: 1200px) {
     .about, .about02 {
         padding: 40px 0; 
@@ -344,63 +399,6 @@ header nav ul li a.active {
         margin-top: 20px; 
     }
 }
-
-.about02{
-    overflow: hidden;
-    background-color: #f6f6f6;
-    width: 100%;
-    padding: 40px 0; 
-    box-sizing: border-box;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.about02 .container{
-    width: 80%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    padding: 34px 14px 64px 14px;
-}
-
-.about02  h1{
-    text-align: center;
-    font-size: 40px;
-    margin-top: 40px;
-}
-
-.about-content2 div{
-    flex: 1;
-}
-
-.about02 .imgapi{
-    max-width: 570px;
-    width: 100%;
-  
-}
-
-.about-description02{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    text-align: center;
-}
-.abouticon{
-  display: flex;
-  align-items: center;
-
-}
-.about-description02 img{
-    margin: 10px;
-}
-
-
-
 
   
   .btn-whatsapp {
